@@ -1,0 +1,5 @@
+CLASS zbp_i_orderdetails DEFINITION PUBLIC ABSTRACT FINAL FOR BEHAVIOR OF zi_orderdetails.
+ENDCLASS.
+
+CLASS zbp_i_orderdetails IMPLEMENTATION.
+ENDCLASS.

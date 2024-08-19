@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service Definition for Online Shop'
+define service ZUI_OnlineShop {
+  expose ZC_OrderDetails as OrderDetails;
+}

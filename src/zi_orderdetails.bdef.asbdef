@@ -1,0 +1,21 @@
+managed with additional save implementation in class zbp_i_orderdetails unique;
+strict;
+
+define behavior for ZI_OrderDetails alias Online_Shop
+persistent table zpsp_orderdetail
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+
+  field ( numbering : managed, readonly ) order_Uuid;
+  field ( mandatory ) Ordereditem;
+  field ( readonly ) Creationdate, order_id, deliverydate;
+  determination calculate_order_id on modify { create; }
+
+  event ItemIsOrdered parameter ZD_ItemOrdered;
+  create;
+  update;
+  delete;
+
+}

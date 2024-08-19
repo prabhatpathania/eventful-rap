@@ -1,0 +1,21 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "RAP business event",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "producerNamespace": "zevent",
+  "producer": "P0394C15B9F5FFF3C403DB00126907BA5",
+  "producerVersion": "0001",
+  "boName": "OnlineShop",
+  "boOperation": "create",
+  "producerType": "zevent.OnlineShop.create.v*",
+  "events": [
+    {
+      "eventVersion": "0001",
+      "entityName": "ZI_ORDERDETAILS",
+      "entityEventName": "ITEMISORDERED"
+    }
+  ]
+}

@@ -10,8 +10,8 @@
 define root view entity ZI_OrderDetails
   as select from zpsp_orderdetail
 {
-  key order_uuid   as OrderUuid,
-      order_id     as OrderId,
+  key order_uuid   as Order_Uuid,
+      order_id     as Order_Id,
       ordereditem  as Ordereditem,
       deliverydate as Deliverydate,
       creationdate as Creationdate
